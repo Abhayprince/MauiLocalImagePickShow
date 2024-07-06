@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="MauiLocalImagePickShow.MainPage"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml">
+
+    <ScrollView>
+        <VerticalStackLayout Padding="30,0" Spacing="25">
+            <Image
+                Aspect="AspectFit"
+                HeightRequest="185"
+                SemanticProperties.Description="dot net bot in a race car number eight"
+                Source="dotnet_bot.png" />
+
+            <Label
+                SemanticProperties.HeadingLevel="Level1"
+                Style="{StaticResource Headline}"
+                Text="Local Image Upload and Show" />
+
+            <Image
+                x:Name="img"
+                HeightRequest="250"
+                WidthRequest="250" />
+
+            <Button
+                Clicked="Button_Clicked"
+                HorizontalOptions="Center"
+                Text="Pick an Image, Upload to App and Show" />
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
